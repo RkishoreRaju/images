@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex Box</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	header{
+		text-align: center;
+		padding: 1%;
+		font-size: 30px;
+		font-weight: bold;
+	}
+	.grid{
+		display: flex;
+		flex-wrap: wrap;
+	}
+		img{
+			width: 250px;
+			height: 250px;
+			padding: 15px;
+			margin:10px;
+			border:1px solid #bbb;
+		}
+
+		@media only screen and (max-width: 600px){
+				.grid{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				}
+					img{
+				width: 250px;
+				height: 250px;
+				padding: 15px;
+				margin:30px;
+				border:1px solid #bbb;
+		}
+
+		}
+	</style>
+</head>
+<body>
+		<header>IMAGES</header>
+		<div class="grid">
+			<img src="img/image1.jpg">
+			<img src="img/image2.jpg">
+			<img src="img/image3.jpg">
+			<img src="img/image1.jpg">
+			<img src="img/image2.jpg">
+			<img src="img/image4.jpg">
+			<img src="img/image5.jpg">
+			<img src="img/image3.jpg">
+		</div>
+
+</body>
+</html>
